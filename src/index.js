@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 // import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BudgetContext } from "./context/BudgetContext"
+import { BudgetsProvider } from "./utils/context"
 
 ReactDOM.render(
   <React.StrictMode>
-    <BudgetContext>
+    <BudgetsProvider>
       <App />
-    </BudgetContext>
+    </BudgetsProvider>
     
   </React.StrictMode>,
   document.getElementById("root")

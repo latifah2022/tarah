@@ -16,7 +16,7 @@ function App() {
 
 function openAddExpenseModal(budgetId) {
   setShowAddExpenseModal(true)
-  setShowAddExpenseModalId(budgetId)
+  setAddExpenseModalBudgetId(budgetId)
 }
   return (
     <>
@@ -40,7 +40,11 @@ function openAddExpenseModal(budgetId) {
               onAddExpenseClick={() => openAddExpenseModal(budget.id)}/>
           )
           })}
-          <Un
+          <UncategorizedBudgetCard
+            onAddExpenseClick={openAddExpenseModal}
+            onViewExpensesClick={() =>
+              setViewExpensesModalBudgetId(UNCATEGORIZED_BUDGET_ID)
+            }/>
       </div>
     </Container>
     <AddBudgetModal show={showAddBudgetModal} 

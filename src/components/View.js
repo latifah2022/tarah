@@ -1,6 +1,6 @@
 import { Modal, Button, Stack } from "react-bootstrap"
-import { UNCATEGORIZED_BUDGET_ID, useBudgets } from "../contexts/BudgetsContext"
-import { currencyFormatter } from "../utils"
+import { UNCATEGORIZED_BUDGET_ID, useBudgets } from "../utils/context"
+import { currencyFormatter } from "../utils/currency"
 
 export default function ViewExpensesModal({ budgetId, handleClose }) {
     const { getBudgetExpenses, budgets, deleteBudget, deleteExpense } = useBudgets()
@@ -19,8 +19,8 @@ export default function ViewExpensesModal({ budgetId, handleClose }) {
                         <div>Expenses - {budget?.name}</div>
                         {budgetId !== UNCATEGORIZED_BUDGET_ID && (
                             <Button onClick={() => {
-                                deleteBudget(budget)
-                                handleClose()}}
+                                deleteBudget(budget) 
+                                handleClose()}} 
                                 variant="outline-danger">
                                     Delete
                             </Button>

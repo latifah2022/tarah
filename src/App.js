@@ -24,7 +24,7 @@ function openAddExpenseModal(budgetId) {
   return (
     <>
     <Container className="my-4">
-      <Stack direction='horizontal'  gap='2' className='mb-4'>
+      <Stack direction='horizontal'  gap='4' className='head mb-3 p-2 bg-white '>
          <h1 className="me-auto">budget</h1>
          <Button variant="primary" onClick={() => setShowAddBudgetModal(true)}> Add budget</Button>
          <Button variant="outline-primary" onClick={openAddExpenseModal}>Add Epense</Button>

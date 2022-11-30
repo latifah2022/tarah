@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import  Container  from "react-bootstrap/Container";
 import { Button, Stack } from "react-bootstrap";
 import BudgetCard from "./components/BudgetCard";

@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/tarah/static/css/main.c2cab247.css",
-    "main.js": "/tarah/static/js/main.f0415611.js",
+    "main.css": "/tarah/static/css/main.123dedef.css",
+    "main.js": "/tarah/static/js/main.f5dde66d.js",
     "index.html": "/tarah/index.html",
-    "main.c2cab247.css.map": "/tarah/static/css/main.c2cab247.css.map",
-    "main.f0415611.js.map": "/tarah/static/js/main.f0415611.js.map"
+    "main.123dedef.css.map": "/tarah/static/css/main.123dedef.css.map",
+    "main.f5dde66d.js.map": "/tarah/static/js/main.f5dde66d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2cab247.css",
-    "static/js/main.f0415611.js"
+    "static/css/main.123dedef.css",
+    "static/js/main.f5dde66d.js"
   ]
 }
